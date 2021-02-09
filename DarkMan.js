@@ -21,11 +21,11 @@ var table = require("table").table;
 const Discord = require("discord.js");
 const cmd = require("node-cmd");
 const prefix = "-";
-client.login("");
+client.login("NzgwNzQ2MTA5MTQ4MDY5ODg4.X7zkeQ.z78XhQS1krQTswGFouOlZPIJ96U");
 client.on("ready", async () => {
   console.log(`Logged in as ${client.user.username}!`);
   client.user.setStatus("idle");
-  client.user.setActivity(`${prefix}help | By Dark Man`, { type: "PLAYING" });
+  client.user.setActivity(`${prefix}help | By Mr CRAZY`, { type: "PLAYING" });
   client.guilds.cache.forEach(g => {
     if (g.member(client.user).hasPermission("ADMINISTRATOR")) {
       g.fetchInvites().then(guildInvites => {});
@@ -41,7 +41,7 @@ client.on("message", async message => {
     .setColor(color)
       .setThumbnail(message.author.avatarURL({dynamic: "true"}))
     
-      .setDescription(`
+      .setDescription(`By MrCRAZY
       
   
                    
@@ -60,10 +60,10 @@ client.on("message", async message => {
 ⚡ | Moderation Commands
  , ban , kick , mute , unmute , slowmode , bans
  say , unban[userid/all]
- __ [SUPPORT](https://discord.gg/bRN8hde6) __ - __ [INVITE](https://discord.com/api/oauth2/authorize?client_id=806636450392965120&permissions=8&scope=bot) __
-
+ __ [SUPPORT](https://discord.gg/JjxdmRkAGW) __ - __ [INVITE](https://discord.com/api/oauth2/authorize?client_id=806636450392965120&permissions=8&scope=bot) __
+I
 `);
-    message.channel.send(help);
+    message.channel.send(s!help);
   }
 });
 
